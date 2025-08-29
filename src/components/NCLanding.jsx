@@ -1,3 +1,4 @@
+import logo from "../assets/logo.png";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
@@ -63,7 +64,7 @@ const NCLanding = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <a href="/" className="cursor-pointer">
-                <img src="/src/assets/logo.png" alt="Priceless Restoration" className="h-12 w-auto" />
+                <img src={logo} alt="Priceless Home Improvements Logo" className="h-20" />
               </a>
             </div>
             <div className="flex items-center space-x-4">
@@ -314,7 +315,7 @@ const NCLanding = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <img src="/src/assets/logo.png" alt="Priceless Restoration" className="h-12 w-auto mb-4" />
+              <img src={logo} alt="Priceless Home Improvements Logo" className="h-12 w-auto mb-4" />
               <p className="text-gray-400">
                 Your trusted partner for storm damage assessment and roof restoration in North Carolina.
               </p>
