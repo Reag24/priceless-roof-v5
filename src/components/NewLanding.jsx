@@ -147,7 +147,7 @@ const NewLanding = () => {
                 Wilmington's #1 Roofing Company
                 <span className="block text-3xl mt-2 text-white/90">Get a FREE, No-Obligation Inspection Today!</span>
               </h2>
-              <p className="text-2xl mb-8 text-white/90">
+              <p className="text-4xl mb-8 text-white/90">
                 Don't let roof concerns keep you up at night. Priceless Home Improvements offers comprehensive, no-cost roof inspections for homeowners in Wilmington, NC. We'll identify any issues and provide clear solutions.
               </p>
               
@@ -169,7 +169,7 @@ const NewLanding = () => {
 
             <Card id="lead-form" className="bg-white/95 backdrop-blur-sm">
               <CardHeader className="text-center">
-                <CardTitle className="text-xl text-primary">
+                <CardTitle className="text-3xl text-primary">
                   Schedule Your FREE Inspection
                 </CardTitle>
                 <p className="text-muted-foreground">
@@ -214,7 +214,7 @@ const NewLanding = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  <Button type="submit" className="w-full h-12 text-lg font-semibold">
+                  <Button type="submit" className="w-full h-12 text-2xl font-semibold">
                     Schedule My FREE Inspection
                   </Button>
                   <p className="text-xs text-center text-muted-foreground">
@@ -236,14 +236,14 @@ const NewLanding = () => {
                   <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <blockquote className="text-xl text-gray-700 italic mb-4">
+              <blockquote className="text-3xl text-gray-700 italic mb-4">
                 "I was able to get a <span className="font-bold text-primary">$15K+ roof for just my $2500 deductible!</span> Rob and his team took care of all aspects of the process, from the insurance claim details, to inspections, to coordination of the roofing crew, to full clean up."
               </blockquote>
-              <p className="text-lg font-semibold text-gray-800">- John McIntyre</p>
+              <p className="text-2xl font-semibold text-gray-800">- John McIntyre</p>
               <div className="mt-6">
                 <button
                   onClick={() => document.getElementById('reviews-section').scrollIntoView({ behavior: 'smooth' })}
-                  className="text-primary hover:text-primary/80 font-semibold text-lg underline"
+                  className="text-primary hover:text-primary/80 font-semibold text-2xl underline"
                 >
                   See More Reviews →
                 </button>
@@ -255,13 +255,13 @@ const NewLanding = () => {
 
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-4xl font-bold mb-6">100% Guaranteed</h3>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
+          <h3 className="text-6xl font-bold mb-6">100% Guaranteed</h3>
+          <p className="text-3xl mb-8 max-w-3xl mx-auto">
             We work on a contingent payment basis. This means we only get paid when your insurance claim is approved. 
             If your claim is denied, you owe us nothing. Our expertise in insurance claims and roofing ensures the best possible outcome.
           </p>
           <div className="mt-8">
-            <Badge variant="secondary" className="text-lg px-4 py-2 bg-green-500 text-white">
+            <Badge variant="secondary" className="text-2xl px-4 py-2 bg-green-500 text-white">
               <CheckCircle className="h-5 w-5 mr-2" />
               Satisfaction Guaranteed
             </Badge>
@@ -272,8 +272,8 @@ const NewLanding = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold mb-4">Why Wilmington Homeowners Trust Priceless</h3>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h3 className="text-6xl font-bold mb-4">Why Wilmington Homeowners Trust Priceless</h3>
+            <p className="text-3xl text-muted-foreground max-w-2xl mx-auto">
               We're dedicated to providing top-tier roofing solutions with integrity and transparency.
             </p>
           </div>
@@ -282,8 +282,8 @@ const NewLanding = () => {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <Shield className="h-20 w-20 text-primary mx-auto mb-4" />
-                <h4 className="text-xl font-semibold mb-2">Licensed & Insured</h4>
-                <p className="text-lg text-muted-foreground">
+                <h4 className="text-3xl font-semibold mb-2">Licensed & Insured</h4>
+                <p className="text-2xl text-muted-foreground">
                   Fully licensed contractors with comprehensive insurance coverage for your peace of mind.
                 </p>
               </CardContent>
@@ -292,8 +292,8 @@ const NewLanding = () => {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <img src={ikoLogo} alt="IKO Certified" className="h-20 mx-auto mb-4" />
-                <h4 className="text-xl font-semibold mb-2">IKO Certified Experts</h4>
-                <p className="text-lg text-muted-foreground">
+                <h4 className="text-3xl font-semibold mb-2">IKO Certified Experts</h4>
+                <p className="text-2xl text-muted-foreground">
                   Our team is certified by IKO, ensuring the highest standards in roofing installation and materials.
                 </p>
               </CardContent>
@@ -302,8 +302,8 @@ const NewLanding = () => {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <Star className="h-20 w-20 text-primary mx-auto mb-4" />
-                <h4 className="text-xl font-semibold mb-2">18/18 5 Star Reviews</h4>
-                <p className="text-lg text-muted-foreground">
+                <h4 className="text-3xl font-semibold mb-2">18/18 5 Star Reviews</h4>
+                <p className="text-2xl text-muted-foreground">
                   Proudly serving Wilmington with a track record of satisfied customers and exceptional results.
                 </p>
               </CardContent>
@@ -314,7 +314,7 @@ const NewLanding = () => {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h3 className="text-4xl font-bold text-center mb-12">Our Work in Wilmington</h3>
+          <h3 className="text-6xl font-bold text-center mb-12">Our Work in Wilmington</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {images.map((img, index) => (
               <div key={index} className="overflow-hidden rounded-lg shadow-lg">
@@ -328,7 +328,18 @@ const NewLanding = () => {
       <section id="reviews-section" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold mb-4">What Our Wilmington Customers Say</h3>
+            <h3 className="text-6xl font-bold mb-4">What Our Wilmington Customers Say</h3>
+      <section className="py-16 bg-primary text-white text-center">
+        <div className="container mx-auto px-4">
+          <h3 className="text-6xl font-bold mb-8">Ready to Get Your FREE Inspection?</h3>
+          <p className="text-4xl mb-12 max-w-4xl mx-auto">
+            Don't wait! Get peace of mind with a professional roof inspection today.
+          </p>
+          <Button size="lg" variant="secondary" className="text-3xl px-16 py-8 bg-white text-primary hover:bg-gray-100" onClick={scrollToForm}>
+            Book Your FREE Inspection Now
+          </Button>
+        </div>
+      </section>
             <div className="flex justify-center items-center space-x-1 mb-4">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-8 w-8 fill-yellow-400 text-yellow-400" />
@@ -347,7 +358,7 @@ const NewLanding = () => {
                     </div>
                     <span className="text-sm text-gray-500">{review.timeAgo}</span>
                   </div>
-                  <blockquote className="text-gray-700 mb-4">
+                  <blockquote className="text-gray-700 mb-4 text-xl">
                     "{review.text}"
                   </blockquote>
                   <div className="flex items-center justify-between mt-4">
@@ -364,12 +375,12 @@ const NewLanding = () => {
 
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-4xl font-bold mb-6">Ready for Your FREE Roof Inspection?</h3>
-          <p className="text-2xl mb-8 max-w-2xl mx-auto">
+          <h3 className="text-6xl font-bold mb-6">Ready for Your FREE Roof Inspection?</h3>
+          <p className="text-4xl mb-8 max-w-2xl mx-auto">
             Don't delay! Get peace of mind with a professional inspection and learn how our contingent payment guarantee protects you.
           </p>
           <div className="flex justify-center">
-            <Button size="lg" variant="secondary" className="text-xl px-12 py-6" onClick={scrollToForm}>
+            <Button size="lg" variant="secondary" className="text-3xl px-12 py-6" onClick={scrollToForm}>
               Get Your FREE Inspection
             </Button>
           </div>
@@ -404,7 +415,7 @@ const NewLanding = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-4">Services</h4>
+              <h4 className="text-2xl font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-300">
                 <li>Roof Inspections</li>
                 <li>Insurance Claims</li>
@@ -415,7 +426,7 @@ const NewLanding = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-4">Connect</h4>
+              <h4 className="text-2xl font-semibold mb-4">Connect</h4>
               <div className="flex items-center space-x-4">
                 <a 
                   href="https://www.facebook.com/profile.php?id=61575266752587" 
