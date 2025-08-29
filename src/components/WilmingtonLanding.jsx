@@ -1,4 +1,25 @@
-const LandingPage = () => {
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Badge } from "./ui/badge";
+import { Phone, Mail, MapPin, Star, Shield, CheckCircle, Home, FileText, ArrowUpCircle } from "lucide-react";
+import { trackFormSubmission } from "./TrackingSimple";
+import logo from "../assets/logo.png";
+import ikoLogo from "../assets/iko_logo.png";
+import house1 from "../assets/house1.svg";
+import house2 from "../assets/house2.svg";
+import house3 from "../assets/house3.svg";
+import house4 from "../assets/house4.svg";
+import house5 from "../assets/house5.svg";
+import house6 from "../assets/house6.svg";
+import BlogCarousel from "./BlogCarousel";
+import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema } from "./SEOSchema";
+import TrackingSimple from "./TrackingSimple";
+
+const WilmingtonLanding = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     phone: "",
