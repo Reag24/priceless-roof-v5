@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Card, CardContent } from './ui/card';
-import { Star, Phone, MapPin, Shield, CheckCircle, ArrowRight } from 'lucide-react';
+import { Star, Phone, MapPin, Shield, CheckCircle, ArrowRight, Home, FileText } from 'lucide-react';
 import logo from '../assets/logo.png';
+import ikoLogo from '../assets/iko_logo.png';
 
 const CapeFearLanding = () => {
   const [formData, setFormData] = useState({
@@ -55,28 +56,37 @@ const CapeFearLanding = () => {
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <img src={logo} alt="Priceless Restoration" className="h-12" />
+          <div className="flex items-center space-x-4">
+            <img src={logo} alt="Priceless Restoration" className="h-12" />
+            <img src={ikoLogo} alt="IKO" className="h-8" />
+          </div>
+          <nav className="hidden md:flex space-x-8">
+            <a href="/" className="text-gray-700 hover:text-red-600 font-medium">Home</a>
+            <a href="/services" className="text-gray-700 hover:text-red-600 font-medium">Services</a>
+            <a href="/contact" className="text-gray-700 hover:text-red-600 font-medium">Contact</a>
+          </nav>
           <div className="flex items-center space-x-4">
             <div className="flex items-center text-gray-600">
               <Phone className="h-4 w-4 mr-2" />
-              <span className="text-lg font-semibold">(910) 769-8262</span>
+              <span className="font-semibold">(910) 769-8262</span>
             </div>
             <div className="flex items-center text-gray-600">
               <MapPin className="h-4 w-4 mr-2" />
-              <span className="text-lg">Wilmington, NC</span>
+              <span>Wilmington, NC</span>
             </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-red-600 to-red-800 text-white py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-20">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Cape Fear's #1 Roofing Company
             </h1>
-            <p className="text-3xl mb-8">
+            <p className="text-xl md:text-2xl mb-8 text-gray-200">
               Get Your FREE Roof Inspection & Insurance Claim Assessment
             </p>
             
@@ -84,55 +94,59 @@ const CapeFearLanding = () => {
             <div className="flex justify-center items-center mb-8">
               <div className="flex space-x-1 mr-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-8 w-8 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <span className="text-2xl font-semibold">18/18 5-Star Reviews</span>
+              <span className="text-lg font-semibold">18/18 5-Star Reviews</span>
             </div>
 
             {/* CTA Button */}
             <Button 
               onClick={scrollToForm}
-              className="bg-yellow-400 hover:bg-yellow-500 text-red-800 text-2xl font-bold py-6 px-12 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+              className="bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
             >
               GET FREE INSPECTION NOW
-              <ArrowRight className="ml-2 h-6 w-6" />
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Services Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Our Services</h2>
+            <p className="text-xl text-gray-600">Professional roofing solutions for the Cape Fear region</p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center p-8 border-0 shadow-lg">
+            <Card className="text-center p-8 border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Home className="h-8 w-8 text-red-600" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Roof Replacement</h3>
+              <p className="text-gray-600">
+                Complete roof replacement with premium materials and expert installation.
+              </p>
+            </Card>
+
+            <Card className="text-center p-8 border-0 shadow-lg hover:shadow-xl transition-shadow">
               <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-red-600" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Insurance Experts</h3>
-              <p className="text-lg text-gray-600">
-                We handle all insurance claims and paperwork. Most customers pay only their deductible!
+              <h3 className="text-2xl font-bold mb-4">Insurance Claims</h3>
+              <p className="text-gray-600">
+                We handle all insurance paperwork and negotiations for you.
               </p>
             </Card>
 
-            <Card className="text-center p-8 border-0 shadow-lg">
+            <Card className="text-center p-8 border-0 shadow-lg hover:shadow-xl transition-shadow">
               <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="h-8 w-8 text-red-600" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Same-Day Service</h3>
-              <p className="text-lg text-gray-600">
-                Emergency repairs and inspections completed the same day you call us.
-              </p>
-            </Card>
-
-            <Card className="text-center p-8 border-0 shadow-lg">
-              <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="h-8 w-8 text-red-600" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">100% Satisfaction</h3>
-              <p className="text-lg text-gray-600">
-                Perfect 5-star rating with 18 verified customer reviews.
+              <h3 className="text-2xl font-bold mb-4">Emergency Repairs</h3>
+              <p className="text-gray-600">
+                Same-day emergency repairs and storm damage assessment.
               </p>
             </Card>
           </div>
@@ -144,7 +158,7 @@ const CapeFearLanding = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">What Our Cape Fear Customers Say</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-6 shadow-lg">
+            <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
                 <div className="flex space-x-1 mr-4">
                   {[...Array(5)].map((_, i) => (
@@ -162,7 +176,7 @@ const CapeFearLanding = () => {
               </div>
             </Card>
 
-            <Card className="p-6 shadow-lg">
+            <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
                 <div className="flex space-x-1 mr-4">
                   {[...Array(5)].map((_, i) => (
@@ -249,7 +263,7 @@ const CapeFearLanding = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
                 >
                   GET FREE INSPECTION
                 </Button>
