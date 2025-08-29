@@ -42,6 +42,7 @@ import house5 from './assets/house5.svg';
 import house6 from './assets/house6.svg';
 import NCLanding from "./components/NCLanding.jsx";
 import WilmingtonLanding from "./components/WilmingtonLanding.jsx";
+import SimpleLanding from "./components/SimpleLanding.jsx";
 
 const allReviews = [
   {
@@ -714,6 +715,7 @@ function App() {
         <Route path="/blog/granules-in-gutters" element={<GranulesInGuttersPost />} />
         <Route path="/wilmington-landing" element={<WilmingtonLanding />} />
         <Route path="/nc-landing" element={<NCLanding />} />
+        <Route path="/new-landing" element={<SimpleLanding />} />
       </Routes>
     </Router>
   );
