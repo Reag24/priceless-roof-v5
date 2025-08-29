@@ -316,136 +316,19 @@ const SimpleLanding = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-      <section id="reviews-section" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
             <h3 className="text-6xl font-bold mb-4">What Our Wilmington Customers Say</h3>
             <div className="flex justify-center items-center space-x-1 mb-4">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-8 w-8 fill-yellow-400 text-yellow-400" />
               ))}
+              <span className="ml-2 text-4xl font-semibold">Trusted by Homeowners Like You</span>
             </div>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1 mr-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <span className="text-lg text-gray-500">a month ago</span>
-                </div>
-                <blockquote className="text-gray-700 mb-4 text-xl">
-                  "We had an absolutely nominal experience working with Reagan and Jeff from Priceless home improvements! They were absolute professionals the entire time, the crew is only at our house for about six or seven hours to get the whole roof done. We couldn't be happier with the service and the quality of work that they did. Highly recommend them to anyone looking to get a new roof!"
-                </blockquote>
-                <div className="flex items-center justify-between mt-4">
-                  <p className="font-semibold text-gray-800 text-xl">Andrew M.</p>
-                  <span className="text-lg text-gray-500">Wilmington, NC</span>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1 mr-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <span className="text-lg text-gray-500">9 months ago</span>
-                </div>
-                <blockquote className="text-gray-700 mb-4 text-xl">
-                  "This is a great company to work with to replace a roof. They handled working with my insurance company very professionally, making it practically seamless. The crew who actually did all the installation were wonderful. Did it all in 1 day and left my property that night completely without the job's debris. I highly recommend."
-                </blockquote>
-                <div className="flex items-center justify-between mt-4">
-                  <p className="font-semibold text-gray-800 text-xl">Diane Bailey-Beger</p>
-                  <span className="text-lg text-gray-500">Wilmington, NC</span>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1 mr-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <span className="text-lg text-gray-500">a year ago</span>
-                </div>
-                <blockquote className="text-gray-700 mb-4 text-xl">
-                  "Rob and his team were brilliant to work with! I got their contact information from a friend who was pleased with their work, and Rob was super responsive. He showed up the next day after we spoke and gave a thorough assessment to us. The thing that stood out the most was that he gave us the truth about not needing repairs but rather just some paint in area where we had experienced leak damage. Other companies would have tried to swindle us into paying them for unnecessary repairs, but Rob's honesty saved us time and money."
-                </blockquote>
-                <div className="flex items-center justify-between mt-4">
-                  <p className="font-semibold text-gray-800 text-xl">Benjamin Allman</p>
-                  <span className="text-lg text-gray-500">Wilmington, NC</span>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1 mr-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <span className="text-lg text-gray-500">4 months ago</span>
-                </div>
-                <blockquote className="text-gray-700 mb-4 text-xl">
-                  "I was able to get a $15K+ roof for just my $2500 deductible! Rob and his team took care of all aspects of the process, from the insurance claim details, to inspections, to coordination of the roofing crew, to full clean up."
-                </blockquote>
-                <div className="flex items-center justify-between mt-4">
-                  <p className="font-semibold text-gray-800 text-xl">John McIntyre</p>
-                  <span className="text-lg text-gray-500">Wilmington, NC</span>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1 mr-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <span className="text-lg text-gray-500">6 months ago</span>
-                </div>
-                <blockquote className="text-gray-700 mb-4 text-xl">
-                  "Priceless Home Improvements exceeded all my expectations! They were professional, punctual, and the quality of work was outstanding. The crew was respectful of my property and cleaned up perfectly. I would definitely recommend them to anyone needing roof work."
-                </blockquote>
-                <div className="flex items-center justify-between mt-4">
-                  <p className="font-semibold text-gray-800 text-xl">Sarah Johnson</p>
-                  <span className="text-lg text-gray-500">Wilmington, NC</span>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1 mr-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <span className="text-lg text-gray-500">3 months ago</span>
-                </div>
-                <blockquote className="text-gray-700 mb-4 text-xl">
-                  "Amazing service from start to finish! They helped me navigate the insurance process and got my roof replaced quickly. The team was knowledgeable and made sure everything was done right. I'm so grateful for their expertise and professionalism."
-                </blockquote>
-                <div className="flex items-center justify-between mt-4">
-                  <p className="font-semibold text-gray-800 text-xl">Michael Rodriguez</p>
-                  <span className="text-lg text-gray-500">Wilmington, NC</span>
-                </div>
-              </CardContent>
-            </Card>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {reviews.map((review, index) => (
+              <ReviewCard key={index} review={review} index={index} />
+            ))}
           </div>
         </div>
       </section>
