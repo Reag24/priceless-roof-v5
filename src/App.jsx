@@ -42,9 +42,7 @@ import house5 from './assets/house5.svg';
 import house6 from './assets/house6.svg';
 import NCLanding from "./components/NCLanding.jsx";
 import WilmingtonLanding from "./components/WilmingtonLanding.jsx";
-import NewLanding from "./components/NewLanding.jsx";
 
-import TestLanding from "./components/TestLanding.jsx";
 const allReviews = [
   {
     name: "Andrew M.",
@@ -715,8 +713,6 @@ function App() {
         <Route path="/blog/will-claim-get-dropped" element={<WillClaimGetDroppedPost />} />
         <Route path="/blog/granules-in-gutters" element={<GranulesInGuttersPost />} />
         <Route path="/wilmington-landing" element={<WilmingtonLanding />} />
-        <Route path="/new-landing" element={<NewLanding />} />
-        <Route path="/test" element={<TestLanding />} />
         <Route path="/nc-landing" element={<NCLanding />} />
       </Routes>
     </Router>
