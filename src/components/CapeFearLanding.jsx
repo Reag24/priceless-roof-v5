@@ -248,54 +248,66 @@ const CapeFearLanding = () => {
           <h2 className="text-4xl font-bold text-center mb-12">Our Work in Wilmington</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <div className="bg-gray-300 h-64 flex items-center justify-center">
-                <span className="text-gray-500">House Image 1</span>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Two-story light green house with wrap-around porch" 
+                className="w-full h-64 object-cover"
+              />
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <div className="bg-gray-300 h-64 flex items-center justify-center">
-                <span className="text-gray-500">House Image 2</span>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Aerial view of large white building with dark roof" 
+                className="w-full h-64 object-cover"
+              />
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <div className="bg-gray-300 h-64 flex items-center justify-center">
-                <span className="text-gray-500">House Image 3</span>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Large light brown house with complex roofline" 
+                className="w-full h-64 object-cover"
+              />
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <div className="bg-gray-300 h-64 flex items-center justify-center">
-                <span className="text-gray-500">House Image 4</span>
+              <img 
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" 
+                alt="Close-up aerial view of dark gray shingle roof" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute top-4 left-4">
+                <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
+            </div>
+            
+            <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="White house with dark shutters and front porch" 
+                className="w-full h-64 object-cover"
+              />
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <div className="bg-gray-300 h-64 flex items-center justify-center">
-                <span className="text-gray-500">House Image 5</span>
-              </div>
-              <div className="absolute top-4 right-4">
-                <img src={logo} alt="Priceless" className="h-8 w-8" />
-              </div>
-            </div>
-            
-            <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <div className="bg-gray-300 h-64 flex items-center justify-center">
-                <span className="text-gray-500">House Image 6</span>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Modern light gray house with dark roof and garage" 
+                className="w-full h-64 object-cover"
+              />
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
