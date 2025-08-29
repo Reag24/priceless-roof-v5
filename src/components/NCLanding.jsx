@@ -63,18 +63,18 @@ const NCLanding = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <a href="/" className="cursor-pointer">
-                <img src="/lovable-uploads/3dda712e-6e40-42d0-9e27-c1d1a919d2b3.png" alt="Priceless Restoration" className="h-12 w-auto" />
+                <img src="/src/assets/logo.png" alt="Priceless Restoration" className="h-12 w-auto" />
               </a>
             </div>
             <div className="flex items-center space-x-4">
               <div className="hidden lg:flex items-center space-x-6 text-sm">
                 <div className="flex items-center space-x-2">
                   <Phone className="w-4 h-4 text-red-600" />
-                  <span className="text-red-600 font-semibold">(301) 769-8262</span>
+                  <span className="text-red-600 font-semibold">(910) 769-8262</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="w-4 h-4 text-gray-600" />
-                  <span className="text-gray-600">White Plains, MD</span>
+                  <span className="text-gray-600">Wilmington, NC</span>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ const NCLanding = () => {
       <section 
         className="relative bg-cover bg-center bg-no-repeat min-h-[700px] flex items-center"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(179, 33, 33, 0.85), rgba(139, 26, 26, 0.85)), url('/lovable-uploads/3dda712e-6e40-42d0-9e27-c1d1a919d2b3.png')`
+          backgroundImage: `linear-gradient(135deg, rgba(179, 33, 33, 0.85), rgba(139, 26, 26, 0.85)), url('/src/assets/logo.png')`
         }}
       >
         <div className="container mx-auto px-4 py-16">
@@ -314,7 +314,7 @@ const NCLanding = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <img src="/lovable-uploads/3dda712e-6e40-42d0-9e27-c1d1a919d2b3.png" alt="Priceless Restoration" className="h-12 w-auto mb-4" />
+              <img src="/src/assets/logo.png" alt="Priceless Restoration" className="h-12 w-auto mb-4" />
               <p className="text-gray-400">
                 Your trusted partner for storm damage assessment and roof restoration in North Carolina.
               </p>
@@ -324,11 +324,11 @@ const NCLanding = () => {
               <div className="space-y-2 text-gray-400">
                 <p className="flex items-center space-x-2">
                   <Phone className="w-4 h-4" />
-                  <span>(301) 769-8262</span>
+                  <span>(910) 769-8262</span>
                 </p>
                 <p className="flex items-center space-x-2">
                   <MapPin className="w-4 h-4" />
-                  <span>White Plains, MD</span>
+                  <span>Wilmington, NC</span>
                 </p>
               </div>
             </div>
