@@ -32,7 +32,7 @@ const LandingPage = () => {
       });
       if (response.ok) {
         // Track form submission
-        trackFormSubmission('wilmington_landing_form');
+        trackFormSubmission('roof_inspection');
         navigate("/thankyou");
       } else {
         alert("There was an error submitting your request. Please try again.");
@@ -93,7 +93,7 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-5xl font-bold mb-6 leading-tight">
-                Wilmington's #1 Roofing Company
+                Worried About Your Roof?
                 <span className="block text-3xl mt-2 text-white/90">Get a FREE, No-Obligation Inspection Today!</span>
               </h2>
               <p className="text-2xl mb-8 text-white/90">
@@ -267,7 +267,7 @@ const LandingPage = () => {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <Star className="h-20 w-20 text-primary mx-auto mb-4" />
-                <h4 className="text-xl font-semibold mb-2">18/18 5 Star Reviews</h4>
+                <h4 className="text-xl font-semibold mb-2">5-Star Reviews</h4>
                 <p className="text-lg text-muted-foreground">
                   Proudly serving Wilmington with a track record of satisfied customers and exceptional results.
                 </p>
@@ -432,4 +432,3 @@ const LandingPage = () => {
   );
 };
 
-export default WilmingtonLanding;
