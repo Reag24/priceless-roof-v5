@@ -15,7 +15,6 @@ import house3 from '../assets/house3.svg';
 import house4 from '../assets/house4.svg';
 import house5 from '../assets/house5.svg';
 import house6 from '../assets/house6.svg';
-import BlogCarousel from './BlogCarousel';
 import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema } from './SEOSchema';
 import TrackingSimple from './TrackingSimple';
 
@@ -362,7 +361,6 @@ const NewLanding = () => {
         </div>
       </section>
 
-      <BlogCarousel />
 
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
