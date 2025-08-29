@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Card, CardContent } from './ui/card';
-import { Star, Phone, MapPin, Shield, CheckCircle, ArrowRight, Home, FileText, Facebook, Instagram } from 'lucide-react';
+import { Star, Phone, MapPin, Shield, CheckCircle, ArrowRight, Home, FileText, Facebook, Instagram, Check } from 'lucide-react';
 import logo from '../assets/logo.png';
 import ikoLogo from '../assets/iko_logo.png';
 
@@ -201,6 +201,105 @@ const CapeFearLanding = () => {
                 </a>
               </div>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Guarantee Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-red-800 mb-6">Our Unbeatable Guarantee</h2>
+            <p className="text-xl text-gray-700 mb-8">
+              We stand by our commitment to your satisfaction. Our work is completely contingent on your insurance claim getting fully approved. This means:
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="border-2 border-red-800 rounded-lg p-8 bg-white">
+                <h3 className="text-2xl font-bold text-red-800 mb-4">If Your Claim is Denied:</h3>
+                <p className="text-lg text-gray-700">
+                  You owe us absolutely nothing. Our inspection and assistance come at no cost to you.
+                </p>
+              </div>
+              
+              <div className="border-2 border-red-800 rounded-lg p-8 bg-white">
+                <h3 className="text-2xl font-bold text-red-800 mb-4">If Your Claim is Approved:</h3>
+                <p className="text-lg text-gray-700">
+                  You only pay your deductible for a full new roof. We handle the rest, ensuring a seamless process.
+                </p>
+              </div>
+            </div>
+            
+            <p className="text-xl text-gray-700 mb-8">
+              This guarantee ensures you have nothing to lose and a brand new roof to gain. We only get paid when you get approved!
+            </p>
+            
+            <Button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg">
+              <Check className="h-5 w-5 mr-2" />
+              100% Guaranteed
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">Our Work in Wilmington</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <div className="bg-gray-300 h-64 flex items-center justify-center">
+                <span className="text-gray-500">House Image 1</span>
+              </div>
+              <div className="absolute top-4 right-4">
+                <img src={logo} alt="Priceless" className="h-8 w-8" />
+              </div>
+            </div>
+            
+            <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <div className="bg-gray-300 h-64 flex items-center justify-center">
+                <span className="text-gray-500">House Image 2</span>
+              </div>
+              <div className="absolute top-4 right-4">
+                <img src={logo} alt="Priceless" className="h-8 w-8" />
+              </div>
+            </div>
+            
+            <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <div className="bg-gray-300 h-64 flex items-center justify-center">
+                <span className="text-gray-500">House Image 3</span>
+              </div>
+              <div className="absolute top-4 right-4">
+                <img src={logo} alt="Priceless" className="h-8 w-8" />
+              </div>
+            </div>
+            
+            <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <div className="bg-gray-300 h-64 flex items-center justify-center">
+                <span className="text-gray-500">House Image 4</span>
+              </div>
+              <div className="absolute top-4 right-4">
+                <img src={logo} alt="Priceless" className="h-8 w-8" />
+              </div>
+            </div>
+            
+            <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <div className="bg-gray-300 h-64 flex items-center justify-center">
+                <span className="text-gray-500">House Image 5</span>
+              </div>
+              <div className="absolute top-4 right-4">
+                <img src={logo} alt="Priceless" className="h-8 w-8" />
+              </div>
+            </div>
+            
+            <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <div className="bg-gray-300 h-64 flex items-center justify-center">
+                <span className="text-gray-500">House Image 6</span>
+              </div>
+              <div className="absolute top-4 right-4">
+                <img src={logo} alt="Priceless" className="h-8 w-8" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
