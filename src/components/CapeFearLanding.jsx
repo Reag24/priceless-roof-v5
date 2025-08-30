@@ -249,8 +249,8 @@ const CapeFearLanding = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="relative rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                alt="Two-story light green house with wrap-around porch" 
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Two-story white house with dark shutters and front porch" 
                 className="w-full h-64 object-cover"
               />
               <div className="absolute top-4 right-4">
