@@ -248,66 +248,78 @@ const CapeFearLanding = () => {
           <h2 className="text-4xl font-bold text-center mb-12">Our Work in Wilmington</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                alt="Two-story white house with dark shutters and front porch" 
-                className="w-full h-64 object-cover"
-              />
+              <div className="w-full h-64 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
+                <div className="text-center text-gray-600">
+                  <div className="text-2xl mb-2">🏠</div>
+                  <div className="text-sm">Two-story white house</div>
+                  <div className="text-xs">with dark shutters</div>
+                </div>
+              </div>
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                alt="Aerial view of large white building with dark roof" 
-                className="w-full h-64 object-cover"
-              />
+              <div className="w-full h-64 bg-gradient-to-br from-blue-300 to-blue-400 flex items-center justify-center">
+                <div className="text-center text-gray-600">
+                  <div className="text-2xl mb-2">🏢</div>
+                  <div className="text-sm">Aerial view of</div>
+                  <div className="text-xs">large white building</div>
+                </div>
+              </div>
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                alt="Large light brown house with complex roofline" 
-                className="w-full h-64 object-cover"
-              />
+              <div className="w-full h-64 bg-gradient-to-br from-yellow-300 to-yellow-400 flex items-center justify-center">
+                <div className="text-center text-gray-600">
+                  <div className="text-2xl mb-2">🏘️</div>
+                  <div className="text-sm">Large light brown house</div>
+                  <div className="text-xs">with complex roofline</div>
+                </div>
+              </div>
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" 
-                alt="Close-up aerial view of dark gray shingle roof" 
-                className="w-full h-64 object-cover"
-              />
+              <div className="w-full h-64 bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <div className="text-2xl mb-2">🏠</div>
+                  <div className="text-sm">Close-up aerial view</div>
+                  <div className="text-xs">of dark gray shingle roof</div>
+                </div>
+              </div>
               <div className="absolute top-4 left-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                alt="White house with dark shutters and front porch" 
-                className="w-full h-64 object-cover"
-              />
+              <div className="w-full h-64 bg-gradient-to-br from-green-300 to-green-400 flex items-center justify-center">
+                <div className="text-center text-gray-600">
+                  <div className="text-2xl mb-2">🏠</div>
+                  <div className="text-sm">White house with</div>
+                  <div className="text-xs">dark shutters and porch</div>
+                </div>
+              </div>
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
             </div>
             
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                alt="Modern light gray house with dark roof and garage" 
-                className="w-full h-64 object-cover"
-              />
+              <div className="w-full h-64 bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center">
+                <div className="text-center text-gray-600">
+                  <div className="text-2xl mb-2">🏠</div>
+                  <div className="text-sm">Modern light gray house</div>
+                  <div className="text-xs">with dark roof and garage</div>
+                </div>
+              </div>
               <div className="absolute top-4 right-4">
                 <img src={logo} alt="Priceless" className="h-8 w-8" />
               </div>
