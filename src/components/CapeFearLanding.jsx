@@ -250,7 +250,7 @@ const CapeFearLanding = () => {
             <div className="relative rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Two-story white house with dark shutters and front porch" 
+                alt="Modern house with multi-gabled roofline, light gray siding, dark gray shingles, white trim, and brick-paved entrance" 
                 className="w-full h-64 object-cover"
               />
               <div className="absolute top-4 right-4">
