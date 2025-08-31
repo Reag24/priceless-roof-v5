@@ -40,11 +40,8 @@ import house3 from './assets/house3.svg';
 import house4 from './assets/house4.svg';
 import house5 from './assets/house5.svg';
 import house6 from './assets/house6.svg';
-import NCLanding from "./components/NCLanding.jsx";
-import WilmingtonLanding from "./components/WilmingtonLanding.jsx";
-import SimpleLanding from "./components/SimpleLanding.jsx";
-import CapeFearLanding from "./components/CapeFearLanding.jsx";
 import HighConvertingLanding from "./components/HighConvertingLanding.jsx";
+import StormDamageLanding from "./components/StormDamageLanding.jsx";
 
 const allReviews = [
   {
@@ -715,11 +712,8 @@ function App() {
         <Route path="/blog/5-ways-roofers-cut-corners" element={<FiveWaysRoofersCutCornersPost />} />
         <Route path="/blog/will-claim-get-dropped" element={<WillClaimGetDroppedPost />} />
         <Route path="/blog/granules-in-gutters" element={<GranulesInGuttersPost />} />
-        <Route path="/wilmington-landing" element={<WilmingtonLanding />} />
-        <Route path="/nc-landing" element={<NCLanding />} />
-        <Route path="/new-landing" element={<SimpleLanding />} />
-        <Route path="/capefear-landing" element={<CapeFearLanding />} />
         <Route path="/coastal-homeowners" element={<HighConvertingLanding />} />
+        <Route path="/stormdamage-nc" element={<StormDamageLanding />} />
       </Routes>
     </Router>
   );
