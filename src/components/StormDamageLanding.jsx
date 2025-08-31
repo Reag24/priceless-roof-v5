@@ -211,7 +211,7 @@ const StormDamageLanding = () => {
           className="absolute inset-0 bg-cover bg-bottom bg-no-repeat opacity-20"
           style={{ backgroundImage: `url(${house3})` }}
         />
-        <div className="relative container mx-auto px-2 sm:px-4 py-8 md:py-20">
+        <div className="relative container mx-auto px-1 sm:px-2 md:px-4 py-8 md:py-20">
           {/* Mobile Layout */}
           <div className="block md:hidden">
             <h1 className="text-4xl font-bold mb-4 leading-tight">
@@ -231,7 +231,7 @@ const StormDamageLanding = () => {
                 ))}
                 <span className="ml-2 text-base font-bold">5.0 Stars</span>
               </div>
-              <p className="text-center text-sm italic">
+              <p className="text-center text-lg font-semibold italic">
                 "Got an $18K roof for just my deductible!" - Jennifer L.
               </p>
             </div>
@@ -264,15 +264,19 @@ const StormDamageLanding = () => {
             </div>
             
             {/* Mobile Form - Now positioned after header content */}
-            <div className="flex justify-center px-2">
-              <Card id="storm-form" className="bg-white/95 backdrop-blur-sm shadow-2xl w-full max-w-md">
+            <div className="flex justify-center px-1">
+              <Card id="storm-form" className="bg-white/95 backdrop-blur-sm shadow-2xl w-full max-w-sm">
                 <CardHeader className="text-center p-3">
                   <CardTitle className="text-xl font-bold text-primary">Get Your FREE Roof Damage Assessment</CardTitle>
                   <CardDescription className="text-base text-muted-foreground">
                     Find out if your roof damage qualifies for insurance coverage
                   </CardDescription>
-                  <div className="bg-blue-600 text-white px-3 py-1 rounded-full inline-block mt-2">
-                    <span className="font-bold text-xs">📞 Free Consultation</span>
+                  <div className="bg-green-600 text-white px-3 py-2 rounded-lg inline-block mt-2">
+                    <div className="text-xs font-bold text-center">
+                      <div>✅ 100% Free</div>
+                      <div>✅ No Obligation</div>
+                      <div>✅ Fully Licensed & Insured</div>
+                    </div>
                   </div>
                 </CardHeader>
                 <CardContent className="p-3">
@@ -350,7 +354,7 @@ const StormDamageLanding = () => {
                   ))}
                   <span className="ml-2 text-xl font-bold">5.0 Stars</span>
                 </div>
-                <p className="text-center text-lg italic">
+                <p className="text-center text-xl font-semibold italic">
                   "Got an $18K roof for just my deductible!" - Jennifer L.
                 </p>
               </div>
@@ -390,8 +394,12 @@ const StormDamageLanding = () => {
                 <CardDescription className="text-lg lg:text-xl text-muted-foreground">
                   Find out if your roof damage qualifies for insurance coverage
                 </CardDescription>
-                <div className="bg-blue-600 text-white px-4 py-2 rounded-full inline-block mt-2">
-                  <span className="font-bold">📞 Free Consultation</span>
+                <div className="bg-green-600 text-white px-4 py-3 rounded-lg inline-block mt-2">
+                  <div className="text-sm font-bold text-center">
+                    <div>✅ 100% Free</div>
+                    <div>✅ No Obligation</div>
+                    <div>✅ Fully Licensed & Insured</div>
+                  </div>
                 </div>
               </CardHeader>
               <CardContent className="p-6 lg:p-8">
