@@ -166,16 +166,6 @@ const HighConvertingLanding = () => {
         </div>
       </header>
 
-      {/* Urgency Banner */}
-      <div className="bg-red-600 text-white py-3">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center space-x-2">
-            <AlertTriangle className="h-5 w-5" />
-            <span className="font-bold text-lg">STORM SEASON ALERT:</span>
-            <span className="text-lg">Hurricane damage claims must be filed within 1 year. Don't wait!</span>
-          </div>
-        </div>
-      </div>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-primary/90 to-primary/70 text-white">
@@ -242,10 +232,10 @@ const HighConvertingLanding = () => {
             </div>
             
             {/* Lead Capture Form */}
-            <Card id="lead-form" className="bg-white/95 backdrop-blur-sm border-4 border-yellow-400 shadow-2xl">
-              <CardHeader className="text-center bg-gradient-to-r from-green-500 to-green-600 text-white rounded-t-lg">
-                <CardTitle className="text-3xl font-bold">Get Your FREE Roof Inspection</CardTitle>
-                <CardDescription className="text-xl text-green-100">
+            <Card id="lead-form" className="bg-white/95 backdrop-blur-sm shadow-2xl">
+              <CardHeader className="text-center">
+                <CardTitle className="text-3xl font-bold text-primary">Get Your FREE Roof Inspection</CardTitle>
+                <CardDescription className="text-xl text-muted-foreground">
                   Find out if you qualify for a new roof through insurance
                 </CardDescription>
                 <div className="bg-red-600 text-white px-4 py-2 rounded-full inline-block mt-2">
@@ -289,7 +279,7 @@ const HighConvertingLanding = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  <Button type="submit" className="w-full h-16 text-2xl font-bold bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg transform hover:scale-105 transition-all">
+                  <Button type="submit" className="w-full h-16 text-2xl font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
                     🏠 CLAIM MY FREE INSPECTION NOW!
                   </Button>
                   <div className="text-center space-y-2">
@@ -327,8 +317,8 @@ const HighConvertingLanding = () => {
                 <p className="text-gray-700">Average roof replacement value</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-md">
-                <div className="text-2xl font-bold text-blue-600 mb-2">24 HOURS</div>
-                <p className="text-gray-700">Our response time for inspections</p>
+                <div className="text-2xl font-bold text-blue-600 mb-2">FREE</div>
+                <p className="text-gray-700">Emergency Leak Stop</p>
               </div>
             </div>
           </div>
@@ -375,7 +365,7 @@ const HighConvertingLanding = () => {
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-10 w-10 fill-yellow-400 text-yellow-400" />
               ))}
-              <span className="ml-4 text-3xl font-bold text-gray-800">5.0 Star Rating</span>
+              <span className="ml-4 text-3xl font-bold text-gray-800">18/18 5-Star Reviews</span>
             </div>
           </div>
           
@@ -456,10 +446,6 @@ const HighConvertingLanding = () => {
           <p className="text-2xl mb-8 max-w-3xl mx-auto font-semibold">
             Storm season is here. Insurance deadlines are approaching. Every day you wait could cost you thousands.
           </p>
-          <div className="bg-yellow-400 text-black p-6 rounded-lg inline-block mb-8">
-            <p className="text-2xl font-bold">⏰ CALL NOW: (910) 508-4015</p>
-            <p className="text-lg">Or fill out the form for immediate response</p>
-          </div>
           <div className="flex justify-center">
             <Button size="lg" variant="secondary" className="text-2xl px-16 py-8 font-bold bg-white text-red-600 hover:bg-gray-100 shadow-2xl transform hover:scale-105 transition-all" onClick={scrollToForm}>
               🚨 GET MY FREE INSPECTION NOW!
