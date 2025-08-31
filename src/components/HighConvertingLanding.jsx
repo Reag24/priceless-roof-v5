@@ -182,9 +182,9 @@ const HighConvertingLanding = () => {
                   LIMITED TIME: Storm Season Special
                 </Badge>
               </div>
-              <h1 className="text-6xl font-bold mb-6 leading-tight">
-                Get a $15,000+ Roof for Just Your Deductible
-                <span className="block text-3xl mt-4 text-yellow-300">100% Insurance Approved or You Pay NOTHING!</span>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Wilmington's #1 Roofing Company
+                <span className="block text-2xl md:text-3xl mt-4 text-yellow-300">Get a $15,000+ Roof for Just Your Deductible - 100% Insurance Approved or You Pay NOTHING!</span>
               </h1>
               <p className="text-2xl mb-8 text-white/95 font-semibold">
                 Wilmington homeowners are saving thousands with our proven insurance claim process. We handle everything - you just pay your deductible when approved.
@@ -252,7 +252,8 @@ const HighConvertingLanding = () => {
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
-                      className="h-14 text-xl border-2 border-gray-300 focus:border-primary"
+                      autoComplete="given-name"
+                      className="h-14 text-lg md:text-xl border-2 border-gray-300 focus:border-primary"
                     />
                   </div>
                   <div>
@@ -263,7 +264,8 @@ const HighConvertingLanding = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       required
-                      className="h-14 text-xl border-2 border-gray-300 focus:border-primary"
+                      autoComplete="tel"
+                      className="h-14 text-lg md:text-xl border-2 border-gray-300 focus:border-primary"
                     />
                   </div>
                   <div>
