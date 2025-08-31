@@ -44,6 +44,7 @@ import NCLanding from "./components/NCLanding.jsx";
 import WilmingtonLanding from "./components/WilmingtonLanding.jsx";
 import SimpleLanding from "./components/SimpleLanding.jsx";
 import CapeFearLanding from "./components/CapeFearLanding.jsx";
+import HighConvertingLanding from "./components/HighConvertingLanding.jsx";
 
 const allReviews = [
   {
@@ -718,11 +719,10 @@ function App() {
         <Route path="/nc-landing" element={<NCLanding />} />
         <Route path="/new-landing" element={<SimpleLanding />} />
         <Route path="/capefear-landing" element={<CapeFearLanding />} />
+        <Route path="/coastal-homeowners" element={<HighConvertingLanding />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
-
-
