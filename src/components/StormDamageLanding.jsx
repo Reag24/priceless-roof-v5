@@ -211,7 +211,7 @@ const StormDamageLanding = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{ backgroundImage: `url(${house3})` }}
         />
-        <div className="relative container mx-auto px-4 py-8 md:py-20">
+        <div className="relative container mx-auto px-2 sm:px-4 py-8 md:py-20">
           {/* Mobile Layout */}
           <div className="block md:hidden">
             <div className="mb-3">
@@ -220,13 +220,13 @@ const StormDamageLanding = () => {
                 URGENT: Storm Damage Claims Deadline
               </Badge>
             </div>
-            <h1 className="text-3xl font-bold mb-4 leading-tight">
-              Storm Damaged Your Roof?
-              <span className="block text-xl mt-2 text-yellow-300">Get Your Insurance Claim Filed Before It's Too Late - FREE Assessment!</span>
+            <h1 className="text-4xl font-bold mb-4 leading-tight">
+              Roof leaks, missing shingles, storm damage? Your claim may cover it all.
+              <span className="block text-2xl mt-2 text-yellow-300">Get Your Insurance Claim Filed Before It's Too Late - FREE Assessment!</span>
             </h1>
 
-            <p className="text-lg mb-6 text-white/95 font-semibold">
-              North Carolina homeowners have limited time to file storm damage claims. Don't lose thousands - we handle the entire insurance process for you.
+            <p className="text-xl mb-6 text-white/95 font-semibold">
+              North Carolina homeowners have limited time to file roof damage claims. Don't lose thousands - we handle the entire insurance process for you.
             </p>
             
             {/* Social Proof */}
@@ -247,35 +247,35 @@ const StormDamageLanding = () => {
                 <div className="bg-green-500 rounded-full p-1.5">
                   <CheckCircle className="h-4 w-4" />
                 </div>
-                <span className="text-base font-semibold">FREE Storm Damage Assessment</span>
+                <span className="text-lg font-semibold">FREE Roof Damage Assessment</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="bg-green-500 rounded-full p-1.5">
                   <AlertTriangle className="h-4 w-4" />
                 </div>
-                <span className="text-base font-semibold">Emergency Claim Filing</span>
+                <span className="text-lg font-semibold">Emergency Claim Filing</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="bg-green-500 rounded-full p-1.5">
                   <Award className="h-4 w-4" />
                 </div>
-                <span className="text-base font-semibold">Storm Damage Specialists</span>
+                <span className="text-lg font-semibold">Roof Damage Specialists</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="bg-green-500 rounded-full p-1.5">
                   <Shield className="h-4 w-4" />
                 </div>
-                <span className="text-base font-semibold">100% Insurance Approved</span>
+                <span className="text-lg font-semibold">100% Insurance Approved</span>
               </div>
             </div>
             
             {/* Mobile Form - Now positioned after header content */}
-            <div className="flex justify-center">
-              <Card id="storm-form" className="bg-white/95 backdrop-blur-sm shadow-2xl w-full max-w-md mx-4">
+            <div className="flex justify-center px-2">
+              <Card id="storm-form" className="bg-white/95 backdrop-blur-sm shadow-2xl w-full max-w-md">
                 <CardHeader className="text-center p-3">
-                  <CardTitle className="text-lg font-bold text-primary">Get Your FREE Storm Damage Assessment</CardTitle>
-                  <CardDescription className="text-sm text-muted-foreground">
-                    Find out if your storm damage qualifies for insurance coverage
+                  <CardTitle className="text-xl font-bold text-primary">Get Your FREE Roof Damage Assessment</CardTitle>
+                  <CardDescription className="text-base text-muted-foreground">
+                    Find out if your roof damage qualifies for insurance coverage
                   </CardDescription>
                   <div className="bg-red-600 text-white px-3 py-1 rounded-full inline-block mt-2">
                     <span className="font-bold text-xs">⚡ Time Sensitive</span>
@@ -292,7 +292,7 @@ const StormDamageLanding = () => {
                         onChange={handleInputChange}
                         required
                         autoComplete="given-name"
-                        className="h-11 text-base border-2 border-gray-300 focus:border-primary"
+                        className="h-12 text-lg border-2 border-gray-300 focus:border-primary"
                       />
                     </div>
                     <div>
@@ -304,12 +304,12 @@ const StormDamageLanding = () => {
                         onChange={handleInputChange}
                         required
                         autoComplete="tel"
-                        className="h-11 text-base border-2 border-gray-300 focus:border-primary"
+                        className="h-12 text-lg border-2 border-gray-300 focus:border-primary"
                       />
                     </div>
                     <div>
                       <Select onValueChange={handleSelectChange} value={formData.roofAge} required>
-                        <SelectTrigger className="h-11 text-base border-2 border-gray-300 focus:border-primary">
+                        <SelectTrigger className="h-12 text-lg border-2 border-gray-300 focus:border-primary">
                           <SelectValue placeholder="Age of Your Roof" />
                         </SelectTrigger>
                         <SelectContent>
@@ -320,14 +320,14 @@ const StormDamageLanding = () => {
                         </SelectContent>
                       </Select>
                     </div>
-                    <Button type="submit" className="w-full h-12 text-base font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
+                    <Button type="submit" className="w-full h-14 text-lg font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
                       ⚡ GET MY FREE ASSESSMENT NOW!
                     </Button>
                     <div className="text-center space-y-1">
-                      <p className="text-xs text-green-600 font-semibold">
+                      <p className="text-sm text-green-600 font-semibold">
                         ✅ No obligation • ✅ 100% FREE • ✅ Emergency response
                       </p>
-                      <p className="text-xs text-muted-foreground">
+                      <p className="text-sm text-muted-foreground">
                         We respect your privacy. Your information will never be shared.
                       </p>
                     </div>
@@ -347,11 +347,11 @@ const StormDamageLanding = () => {
                 </Badge>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                Storm Damaged Your Roof?
+                Roof leaks, missing shingles, storm damage? Your claim may cover it all.
                 <span className="block text-2xl lg:text-3xl mt-4 text-yellow-300">Get Your Insurance Claim Filed Before It's Too Late - FREE Assessment!</span>
               </h1>
               <p className="text-xl lg:text-2xl mb-8 text-white/95 font-semibold">
-                North Carolina homeowners have limited time to file storm damage claims. Don't lose thousands - we handle the entire insurance process for you.
+                North Carolina homeowners have limited time to file roof damage claims. Don't lose thousands - we handle the entire insurance process for you.
               </p>
               
               {/* Social Proof */}
@@ -372,7 +372,7 @@ const StormDamageLanding = () => {
                   <div className="bg-green-500 rounded-full p-2">
                     <CheckCircle className="h-6 w-6" />
                   </div>
-                  <span className="text-lg font-semibold">FREE Storm Damage Assessment</span>
+                  <span className="text-lg font-semibold">FREE Roof Damage Assessment</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-green-500 rounded-full p-2">
@@ -384,7 +384,7 @@ const StormDamageLanding = () => {
                   <div className="bg-green-500 rounded-full p-2">
                     <Award className="h-6 w-6" />
                   </div>
-                  <span className="text-lg font-semibold">Storm Damage Specialists</span>
+                  <span className="text-lg font-semibold">Roof Damage Specialists</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-green-500 rounded-full p-2">
@@ -398,9 +398,9 @@ const StormDamageLanding = () => {
             {/* Desktop Form */}
             <Card id="storm-form-desktop" className="bg-white/95 backdrop-blur-sm shadow-2xl">
               <CardHeader className="text-center p-6">
-                <CardTitle className="text-2xl lg:text-3xl font-bold text-primary">Get Your FREE Storm Damage Assessment</CardTitle>
+                <CardTitle className="text-2xl lg:text-3xl font-bold text-primary">Get Your FREE Roof Damage Assessment</CardTitle>
                 <CardDescription className="text-lg lg:text-xl text-muted-foreground">
-                  Find out if your storm damage qualifies for insurance coverage
+                  Find out if your roof damage qualifies for insurance coverage
                 </CardDescription>
                 <div className="bg-red-600 text-white px-4 py-2 rounded-full inline-block mt-2">
                   <span className="font-bold">⚡ Time Sensitive</span>
@@ -467,8 +467,8 @@ const StormDamageLanding = () => {
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">Real Storm Damage Success Stories</h3>
-            <p className="text-base md:text-lg lg:text-xl text-muted-foreground">See how we've helped NC homeowners recover from storm damage</p>
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">Real Roof Damage Success Stories</h3>
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground">See how we've helped NC homeowners recover from roof damage</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -482,11 +482,11 @@ const StormDamageLanding = () => {
       {/* Gallery Section */}
       <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Storm Damage Repairs Across North Carolina</h3>
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Roof Repairs Across North Carolina</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {images.map((img, index) => (
               <div key={index} className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <img src={img} alt={`Storm damage repair project ${index + 1}`} className="w-full h-48 md:h-64 object-cover transform hover:scale-110 transition-transform duration-500" />
+                <img src={img} alt={`Roof repair project ${index + 1}`} className="w-full h-48 md:h-64 object-cover transform hover:scale-110 transition-transform duration-500" />
               </div>
             ))}
           </div>
@@ -496,9 +496,9 @@ const StormDamageLanding = () => {
       {/* Final CTA Section */}
       <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-r from-red-600 to-red-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6">Don't Let Storm Damage Claims Expire!</h3>
+          <h3 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6">Don't Let Roof Damage Claims Expire!</h3>
           <p className="text-base md:text-lg lg:text-2xl mb-6 md:mb-8 max-w-3xl mx-auto font-semibold">
-            Time is running out. Insurance deadlines are strict. Every day you wait could cost you thousands in storm damage coverage.
+            Time is running out. Insurance deadlines are strict. Every day you wait could cost you thousands in roof damage coverage.
           </p>
           <div className="flex justify-center">
             <Button size="lg" variant="secondary" className="text-lg md:text-xl lg:text-2xl px-8 md:px-12 lg:px-16 py-4 md:py-6 lg:py-8 font-bold bg-white text-red-600 hover:bg-gray-100 shadow-2xl transform hover:scale-105 transition-all" onClick={scrollToForm}>
@@ -529,7 +529,7 @@ const StormDamageLanding = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-primary">Storm Damage Experts</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary">Roof Damage Experts</h3>
             <ul className="space-y-2">
               <li>Shawn Price - CEO</li>
               <li>Mike DiMichelle - District Manager</li>
@@ -560,7 +560,7 @@ const StormDamageLanding = () => {
             &copy; {new Date().getFullYear()} Priceless Home Improvements. All rights reserved.
           </p>
           <p className="text-gray-500 text-xs mt-2">
-            Emergency Storm Damage Specialists serving North Carolina and surrounding areas.
+            Emergency Roof Damage Specialists serving North Carolina and surrounding areas.
           </p>
         </div>
       </footer>
