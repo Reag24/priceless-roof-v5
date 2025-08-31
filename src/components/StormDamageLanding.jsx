@@ -303,8 +303,8 @@ const StormDamageLanding = () => {
                         </SelectContent>
                       </Select>
                     </div>
-                    <Button type="submit" className="w-full h-14 text-lg font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
-                      ⚡ GET MY FREE ASSESSMENT NOW!
+                    <Button type="submit" className="w-full h-14 text-base font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
+                      Get Your Free Roof Inspection
                     </Button>
                     <div className="text-center space-y-1">
                       <p className="text-sm text-muted-foreground">
@@ -408,8 +408,8 @@ const StormDamageLanding = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  <Button type="submit" className="w-full h-16 text-xl lg:text-2xl font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
-                    ⚡ GET MY FREE ASSESSMENT NOW!
+                  <Button type="submit" className="w-full h-16 text-lg lg:text-xl font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
+                    Get Your Free Roof Inspection
                   </Button>
                   <div className="text-center space-y-2">
                     <p className="text-xs text-muted-foreground">
@@ -461,8 +461,8 @@ const StormDamageLanding = () => {
             Time is running out. Insurance deadlines are strict. Every day you wait could cost you thousands in roof damage coverage.
           </p>
           <div className="flex justify-center">
-            <Button size="lg" variant="secondary" className="text-lg md:text-xl lg:text-2xl px-8 md:px-12 lg:px-16 py-4 md:py-6 lg:py-8 font-bold bg-white text-red-600 hover:bg-gray-100 shadow-2xl transform hover:scale-105 transition-all" onClick={scrollToForm}>
-              ⚡ GET MY EMERGENCY ASSESSMENT NOW!
+            <Button size="lg" variant="secondary" className="text-base md:text-lg lg:text-xl px-6 md:px-8 lg:px-12 py-3 md:py-4 lg:py-6 font-bold bg-white text-red-600 hover:bg-gray-100 shadow-2xl transform hover:scale-105 transition-all" onClick={scrollToForm}>
+              Get Your Free Roof Inspection
             </Button>
           </div>
         </div>
