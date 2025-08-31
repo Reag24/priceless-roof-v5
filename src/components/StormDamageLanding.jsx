@@ -236,30 +236,22 @@ const StormDamageLanding = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-3 mb-6">
-              <div className="flex items-center space-x-2">
-                <div className="bg-green-500 rounded-full p-1.5">
-                  <CheckCircle className="h-4 w-4" />
-                </div>
-                <span className="text-lg font-semibold">FREE Roof Damage Assessment</span>
+            <div className="grid grid-cols-1 gap-4 mb-6">
+              <div className="flex items-center space-x-3">
+                <CheckCircle className="h-8 w-8 text-white" />
+                <span className="text-2xl font-bold">FREE Roof Damage Assessment</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="bg-green-500 rounded-full p-1.5">
-                  <AlertTriangle className="h-4 w-4" />
-                </div>
-                <span className="text-lg font-semibold">Emergency Claim Filing</span>
+              <div className="flex items-center space-x-3">
+                <AlertTriangle className="h-8 w-8 text-white" />
+                <span className="text-2xl font-bold">Emergency Claim Filing</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="bg-green-500 rounded-full p-1.5">
-                  <Award className="h-4 w-4" />
-                </div>
-                <span className="text-lg font-semibold">Roof Damage Specialists</span>
+              <div className="flex items-center space-x-3">
+                <Award className="h-8 w-8 text-white" />
+                <span className="text-2xl font-bold">Roof Damage Specialists</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="bg-green-500 rounded-full p-1.5">
-                  <Shield className="h-4 w-4" />
-                </div>
-                <span className="text-lg font-semibold">100% Insurance Approved</span>
+              <div className="flex items-center space-x-3">
+                <Shield className="h-8 w-8 text-white" />
+                <span className="text-2xl font-bold">100% Insurance Approved</span>
               </div>
             </div>
             
@@ -271,13 +263,6 @@ const StormDamageLanding = () => {
                   <CardDescription className="text-base text-muted-foreground">
                     Find out if your roof damage qualifies for insurance coverage
                   </CardDescription>
-                  <div className="bg-green-600 text-white px-3 py-2 rounded-lg inline-block mt-2">
-                    <div className="text-xs font-bold text-center">
-                      <div>✅ 100% Free</div>
-                      <div>✅ No Obligation</div>
-                      <div>✅ Fully Licensed & Insured</div>
-                    </div>
-                  </div>
                 </CardHeader>
                 <CardContent className="p-3">
                   <form onSubmit={handleSubmit} className="space-y-3">
@@ -322,9 +307,6 @@ const StormDamageLanding = () => {
                       ⚡ GET MY FREE ASSESSMENT NOW!
                     </Button>
                     <div className="text-center space-y-1">
-                      <p className="text-sm text-green-600 font-semibold">
-                        ✅ No obligation • ✅ 100% FREE • ✅ Emergency response
-                      </p>
                       <p className="text-sm text-muted-foreground">
                         We respect your privacy. Your information will never be shared.
                       </p>
@@ -359,30 +341,22 @@ const StormDamageLanding = () => {
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <div className="bg-green-500 rounded-full p-2">
-                    <CheckCircle className="h-6 w-6" />
-                  </div>
-                  <span className="text-lg font-semibold">FREE Roof Damage Assessment</span>
+              <div className="grid grid-cols-2 gap-6 mb-8">
+                <div className="flex items-center space-x-4">
+                  <CheckCircle className="h-10 w-10 text-white" />
+                  <span className="text-2xl font-bold">FREE Roof Damage Assessment</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="bg-green-500 rounded-full p-2">
-                    <AlertTriangle className="h-6 w-6" />
-                  </div>
-                  <span className="text-lg font-semibold">Emergency Claim Filing</span>
+                <div className="flex items-center space-x-4">
+                  <AlertTriangle className="h-10 w-10 text-white" />
+                  <span className="text-2xl font-bold">Emergency Claim Filing</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="bg-green-500 rounded-full p-2">
-                    <Award className="h-6 w-6" />
-                  </div>
-                  <span className="text-lg font-semibold">Roof Damage Specialists</span>
+                <div className="flex items-center space-x-4">
+                  <Award className="h-10 w-10 text-white" />
+                  <span className="text-2xl font-bold">Roof Damage Specialists</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="bg-green-500 rounded-full p-2">
-                    <Shield className="h-6 w-6" />
-                  </div>
-                  <span className="text-lg font-semibold">100% Insurance Approved</span>
+                <div className="flex items-center space-x-4">
+                  <Shield className="h-10 w-10 text-white" />
+                  <span className="text-2xl font-bold">100% Insurance Approved</span>
                 </div>
               </div>
             </div>
@@ -394,13 +368,6 @@ const StormDamageLanding = () => {
                 <CardDescription className="text-lg lg:text-xl text-muted-foreground">
                   Find out if your roof damage qualifies for insurance coverage
                 </CardDescription>
-                <div className="bg-green-600 text-white px-4 py-3 rounded-lg inline-block mt-2">
-                  <div className="text-sm font-bold text-center">
-                    <div>✅ 100% Free</div>
-                    <div>✅ No Obligation</div>
-                    <div>✅ Fully Licensed & Insured</div>
-                  </div>
-                </div>
               </CardHeader>
               <CardContent className="p-6 lg:p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -445,9 +412,6 @@ const StormDamageLanding = () => {
                     ⚡ GET MY FREE ASSESSMENT NOW!
                   </Button>
                   <div className="text-center space-y-2">
-                    <p className="text-sm text-green-600 font-semibold">
-                      ✅ No obligation • ✅ 100% FREE • ✅ Emergency response
-                    </p>
                     <p className="text-xs text-muted-foreground">
                       We respect your privacy. Your information will never be shared.
                     </p>
