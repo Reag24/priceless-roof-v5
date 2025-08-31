@@ -192,76 +192,202 @@ const HighConvertingLanding = () => {
           style={{ backgroundImage: `url(${house2})` }}
         />
         <div className="relative container mx-auto px-4 py-8 md:py-20">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="order-2 md:order-1">
-              <div className="mb-3 md:mb-4">
-                <Badge className="bg-yellow-500 text-black text-sm md:text-lg px-3 md:px-4 py-1 md:py-2 font-bold">
-                  <Clock className="h-4 w-4 md:h-5 md:w-5 mr-1 md:mr-2" />
+          {/* Mobile Layout */}
+          <div className="block md:hidden">
+            <div className="mb-3">
+              <Badge className="bg-yellow-500 text-black text-sm px-3 py-1 font-bold">
+                <Clock className="h-4 w-4 mr-1" />
+                LIMITED TIME: Storm Season Special
+              </Badge>
+            </div>
+            <h1 className="text-2xl font-bold mb-4 leading-tight">
+              Wilmington's #1 Roofing Company
+              <span className="block text-lg mt-2 text-yellow-300">Get a $15,000+ Roof for Just Your Deductible - 100% Insurance Approved or You Pay NOTHING!</span>
+            </h1>
+            
+            {/* Mobile Form - Below Headline */}
+            <div className="mb-6">
+              <Card id="lead-form" className="bg-white/95 backdrop-blur-sm shadow-2xl mx-2">
+                <CardHeader className="text-center p-3">
+                  <CardTitle className="text-lg font-bold text-primary">Get Your FREE Roof Inspection</CardTitle>
+                  <CardDescription className="text-sm text-muted-foreground">
+                    Find out if you qualify for a new roof through insurance
+                  </CardDescription>
+                  <div className="bg-red-600 text-white px-3 py-1 rounded-full inline-block mt-2">
+                    <span className="font-bold text-xs">⏰ Limited Time Offer</span>
+                  </div>
+                </CardHeader>
+                <CardContent className="p-3">
+                  <form onSubmit={handleSubmit} className="space-y-3">
+                    <div>
+                      <Input
+                        type="text"
+                        name="firstName"
+                        placeholder="Your First Name"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
+                        required
+                        autoComplete="given-name"
+                        className="h-11 text-base border-2 border-gray-300 focus:border-primary"
+                      />
+                    </div>
+                    <div>
+                      <Input
+                        type="tel"
+                        name="phone"
+                        placeholder="Your Phone Number"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                        required
+                        autoComplete="tel"
+                        className="h-11 text-base border-2 border-gray-300 focus:border-primary"
+                      />
+                    </div>
+                    <div>
+                      <Select onValueChange={handleSelectChange} value={formData.roofAge} required>
+                        <SelectTrigger className="h-11 text-base border-2 border-gray-300 focus:border-primary">
+                          <SelectValue placeholder="Age of Your Roof" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="0-5">0-5 Years</SelectItem>
+                          <SelectItem value="6-10">6-10 Years</SelectItem>
+                          <SelectItem value="11-15">11-15 Years</SelectItem>
+                          <SelectItem value="20+">20+ Years</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <Button type="submit" className="w-full h-12 text-base font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
+                      🏠 CLAIM MY FREE INSPECTION NOW!
+                    </Button>
+                    <div className="text-center space-y-1">
+                      <p className="text-xs text-green-600 font-semibold">
+                        ✅ No obligation • ✅ 100% FREE • ✅ Same day response
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        We respect your privacy. Your information will never be shared.
+                      </p>
+                    </div>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+
+            <p className="text-base mb-6 text-white/95 font-semibold">
+              Wilmington homeowners are saving thousands with our proven insurance claim process. We handle everything - you just pay your deductible when approved.
+            </p>
+            
+            {/* Social Proof */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
+              <div className="flex items-center justify-center space-x-1 mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                ))}
+                <span className="ml-2 text-base font-bold">5.0 Stars</span>
+              </div>
+              <p className="text-center text-sm italic">
+                "I got a $15K+ roof for just my $2500 deductible!" - John M.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-3">
+              <div className="flex items-center space-x-2">
+                <div className="bg-green-500 rounded-full p-1.5">
+                  <CheckCircle className="h-4 w-4" />
+                </div>
+                <span className="text-sm font-semibold">FREE Inspection & Estimate</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="bg-green-500 rounded-full p-1.5">
+                  <DollarSign className="h-4 w-4" />
+                </div>
+                <span className="text-sm font-semibold">We Handle All Insurance Claims</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="bg-green-500 rounded-full p-1.5">
+                  <Award className="h-4 w-4" />
+                </div>
+                <span className="text-sm font-semibold">IKO Certified Contractors</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="bg-green-500 rounded-full p-1.5">
+                  <Shield className="h-4 w-4" />
+                </div>
+                <span className="text-sm font-semibold">Fully Licensed & Insured</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div>
+              <div className="mb-4">
+                <Badge className="bg-yellow-500 text-black text-lg px-4 py-2 font-bold">
+                  <Clock className="h-5 w-5 mr-2" />
                   LIMITED TIME: Storm Season Special
                 </Badge>
               </div>
-              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                 Wilmington's #1 Roofing Company
-                <span className="block text-lg md:text-2xl lg:text-3xl mt-2 md:mt-4 text-yellow-300">Get a $15,000+ Roof for Just Your Deductible - 100% Insurance Approved or You Pay NOTHING!</span>
+                <span className="block text-2xl lg:text-3xl mt-4 text-yellow-300">Get a $15,000+ Roof for Just Your Deductible - 100% Insurance Approved or You Pay NOTHING!</span>
               </h1>
-              <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/95 font-semibold">
+              <p className="text-xl lg:text-2xl mb-8 text-white/95 font-semibold">
                 Wilmington homeowners are saving thousands with our proven insurance claim process. We handle everything - you just pay your deductible when approved.
               </p>
               
               {/* Social Proof */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 mb-6 md:mb-8">
-                <div className="flex items-center justify-center space-x-1 mb-2 md:mb-3">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-8">
+                <div className="flex items-center justify-center space-x-1 mb-3">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 md:h-6 md:w-6 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
                   ))}
-                  <span className="ml-2 text-lg md:text-xl font-bold">5.0 Stars</span>
+                  <span className="ml-2 text-xl font-bold">5.0 Stars</span>
                 </div>
-                <p className="text-center text-base md:text-lg italic">
+                <p className="text-center text-lg italic">
                   "I got a $15K+ roof for just my $2500 deductible!" - John M.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
-                <div className="flex items-center space-x-2 md:space-x-3">
-                  <div className="bg-green-500 rounded-full p-1.5 md:p-2">
-                    <CheckCircle className="h-4 w-4 md:h-6 md:w-6" />
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className="flex items-center space-x-3">
+                  <div className="bg-green-500 rounded-full p-2">
+                    <CheckCircle className="h-6 w-6" />
                   </div>
-                  <span className="text-sm md:text-lg font-semibold">FREE Inspection & Estimate</span>
+                  <span className="text-lg font-semibold">FREE Inspection & Estimate</span>
                 </div>
-                <div className="flex items-center space-x-2 md:space-x-3">
-                  <div className="bg-green-500 rounded-full p-1.5 md:p-2">
-                    <DollarSign className="h-4 w-4 md:h-6 md:w-6" />
+                <div className="flex items-center space-x-3">
+                  <div className="bg-green-500 rounded-full p-2">
+                    <DollarSign className="h-6 w-6" />
                   </div>
-                  <span className="text-sm md:text-lg font-semibold">We Handle All Insurance Claims</span>
+                  <span className="text-lg font-semibold">We Handle All Insurance Claims</span>
                 </div>
-                <div className="flex items-center space-x-2 md:space-x-3">
-                  <div className="bg-green-500 rounded-full p-1.5 md:p-2">
-                    <Award className="h-4 w-4 md:h-6 md:w-6" />
+                <div className="flex items-center space-x-3">
+                  <div className="bg-green-500 rounded-full p-2">
+                    <Award className="h-6 w-6" />
                   </div>
-                  <span className="text-sm md:text-lg font-semibold">IKO Certified Contractors</span>
+                  <span className="text-lg font-semibold">IKO Certified Contractors</span>
                 </div>
-                <div className="flex items-center space-x-2 md:space-x-3">
-                  <div className="bg-green-500 rounded-full p-1.5 md:p-2">
-                    <Shield className="h-4 w-4 md:h-6 md:w-6" />
+                <div className="flex items-center space-x-3">
+                  <div className="bg-green-500 rounded-full p-2">
+                    <Shield className="h-6 w-6" />
                   </div>
-                  <span className="text-sm md:text-lg font-semibold">Fully Licensed & Insured</span>
+                  <span className="text-lg font-semibold">Fully Licensed & Insured</span>
                 </div>
               </div>
             </div>
             
-            {/* Lead Capture Form */}
-            <Card id="lead-form" className="bg-white/95 backdrop-blur-sm shadow-2xl order-1 md:order-2">
-              <CardHeader className="text-center p-4 md:p-6">
-                <CardTitle className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">Get Your FREE Roof Inspection</CardTitle>
-                <CardDescription className="text-base md:text-lg lg:text-xl text-muted-foreground">
+            {/* Desktop Form */}
+            <Card id="lead-form-desktop" className="bg-white/95 backdrop-blur-sm shadow-2xl">
+              <CardHeader className="text-center p-6">
+                <CardTitle className="text-2xl lg:text-3xl font-bold text-primary">Get Your FREE Roof Inspection</CardTitle>
+                <CardDescription className="text-lg lg:text-xl text-muted-foreground">
                   Find out if you qualify for a new roof through insurance
                 </CardDescription>
-                <div className="bg-red-600 text-white px-3 md:px-4 py-1 md:py-2 rounded-full inline-block mt-2">
-                  <span className="font-bold text-sm md:text-base">⏰ Limited Time Offer</span>
+                <div className="bg-red-600 text-white px-4 py-2 rounded-full inline-block mt-2">
+                  <span className="font-bold">⏰ Limited Time Offer</span>
                 </div>
               </CardHeader>
-              <CardContent className="p-4 md:p-6 lg:p-8">
-                <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+              <CardContent className="p-6 lg:p-8">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <Input
                       type="text"
@@ -271,7 +397,7 @@ const HighConvertingLanding = () => {
                       onChange={handleInputChange}
                       required
                       autoComplete="given-name"
-                      className="h-12 md:h-14 text-base md:text-lg lg:text-xl border-2 border-gray-300 focus:border-primary"
+                      className="h-14 text-lg lg:text-xl border-2 border-gray-300 focus:border-primary"
                     />
                   </div>
                   <div>
@@ -283,12 +409,12 @@ const HighConvertingLanding = () => {
                       onChange={handleInputChange}
                       required
                       autoComplete="tel"
-                      className="h-12 md:h-14 text-base md:text-lg lg:text-xl border-2 border-gray-300 focus:border-primary"
+                      className="h-14 text-lg lg:text-xl border-2 border-gray-300 focus:border-primary"
                     />
                   </div>
                   <div>
                     <Select onValueChange={handleSelectChange} value={formData.roofAge} required>
-                      <SelectTrigger className="h-12 md:h-14 text-base md:text-lg lg:text-xl border-2 border-gray-300 focus:border-primary">
+                      <SelectTrigger className="h-14 text-lg lg:text-xl border-2 border-gray-300 focus:border-primary">
                         <SelectValue placeholder="Age of Your Roof" />
                       </SelectTrigger>
                       <SelectContent>
@@ -299,11 +425,11 @@ const HighConvertingLanding = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  <Button type="submit" className="w-full h-14 md:h-16 text-lg md:text-xl lg:text-2xl font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
+                  <Button type="submit" className="w-full h-16 text-xl lg:text-2xl font-bold bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg transform hover:scale-105 transition-all">
                     🏠 CLAIM MY FREE INSPECTION NOW!
                   </Button>
                   <div className="text-center space-y-2">
-                    <p className="text-xs md:text-sm text-green-600 font-semibold">
+                    <p className="text-sm text-green-600 font-semibold">
                       ✅ No obligation • ✅ 100% FREE • ✅ Same day response
                     </p>
                     <p className="text-xs text-muted-foreground">
