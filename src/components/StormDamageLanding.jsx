@@ -231,29 +231,11 @@ const StormDamageLanding = () => {
                 ))}
                 <span className="ml-2 text-base font-bold">5.0 Stars</span>
               </div>
-              <p className="text-center text-lg font-semibold italic">
+              <p className="text-center text-xl lg:text-2xl font-bold italic">
                 "Got an $18K roof for just my deductible!" - Jennifer L.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 mb-6">
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="h-8 w-8 text-white" />
-                <span className="text-2xl font-bold">FREE Roof Damage Assessment</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <AlertTriangle className="h-8 w-8 text-white" />
-                <span className="text-2xl font-bold">Emergency Claim Filing</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Award className="h-8 w-8 text-white" />
-                <span className="text-2xl font-bold">Roof Damage Specialists</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Shield className="h-8 w-8 text-white" />
-                <span className="text-2xl font-bold">100% Insurance Approved</span>
-              </div>
-            </div>
             
             {/* Mobile Form - Now positioned after header content */}
             <div className="flex justify-center px-1">
@@ -336,29 +318,11 @@ const StormDamageLanding = () => {
                   ))}
                   <span className="ml-2 text-xl font-bold">5.0 Stars</span>
                 </div>
-                <p className="text-center text-xl font-semibold italic">
+                <p className="text-center text-2xl lg:text-3xl font-bold italic">
                   "Got an $18K roof for just my deductible!" - Jennifer L.
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="flex items-center space-x-4">
-                  <CheckCircle className="h-10 w-10 text-white" />
-                  <span className="text-2xl font-bold">FREE Roof Damage Assessment</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <AlertTriangle className="h-10 w-10 text-white" />
-                  <span className="text-2xl font-bold">Emergency Claim Filing</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Award className="h-10 w-10 text-white" />
-                  <span className="text-2xl font-bold">Roof Damage Specialists</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Shield className="h-10 w-10 text-white" />
-                  <span className="text-2xl font-bold">100% Insurance Approved</span>
-                </div>
-              </div>
             </div>
             
             {/* Desktop Form */}
@@ -442,7 +406,7 @@ const StormDamageLanding = () => {
       {/* Gallery Section */}
       <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Roof Repairs Across North Carolina</h3>
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Roof Replacements Across North Carolina</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {images.map((img, index) => (
               <div key={index} className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">

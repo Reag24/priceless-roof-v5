@@ -59,9 +59,13 @@ const TrackingSimple = () => {
         noscript.appendChild(img);
         document.head.appendChild(noscript);
       }
-    } else {
-      // If pixel is already initialized, just track the PageView
+      
+      // Mark that we've initialized the pixel to prevent duplicate PageView tracking
+      window._fbPixelInitialized = true;
+    } else if (!window._fbPixelInitialized) {
+      // Only track PageView if we haven't already done so
       window.fbq('track', 'PageView');
+      window._fbPixelInitialized = true;
     }
 
   }, []);
@@ -94,6 +98,11 @@ export const trackFormSubmission = (formType = 'contact') => {
     event_label: formType,
     value: 1
   });
+  
+  // Track Lead event for Meta Pixel
+  if (window.fbq) {
+    window.fbq('track', 'Lead');
+  }
 };
 
 export const trackLeadConversion = () => {
