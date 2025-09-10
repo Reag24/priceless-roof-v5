@@ -12,12 +12,12 @@ const Calendar = () => {
   
   // Define timeline phases with their day ranges
   const timelinePhases = [
-    { id: 'day1', days: [1], color: 'bg-green-500', name: 'Inspection' },
-    { id: 'day7-14', days: [7, 8, 9, 10, 11, 12, 13, 14], color: 'bg-blue-500', name: 'Adjuster Visit' },
-    { id: 'day15-25', days: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], color: 'bg-purple-500', name: 'Approval' },
-    { id: 'day26-35', days: [26, 27, 28, 29, 30, 31, 32, 33, 34, 35], color: 'bg-orange-500', name: 'Project Ready' },
-    { id: 'day36-50', days: [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50], color: 'bg-yellow-500', name: 'Scheduling' },
-    { id: 'day51-60', days: [51, 52, 53, 54, 55, 56, 57, 58, 59, 60], color: 'bg-red-500', name: 'Installation' }
+    { id: 'day1', days: [1], color: 'bg-primary', name: 'Inspection' },
+    { id: 'day7-14', days: [7, 8, 9, 10, 11, 12, 13, 14], color: 'bg-primary', name: 'Adjuster Visit' },
+    { id: 'day15-25', days: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], color: 'bg-primary', name: 'Approval' },
+    { id: 'day26-35', days: [26, 27, 28, 29, 30, 31, 32, 33, 34, 35], color: 'bg-primary', name: 'Project Ready' },
+    { id: 'day36-50', days: [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50], color: 'bg-primary', name: 'Scheduling' },
+    { id: 'day51-60', days: [51, 52, 53, 54, 55, 56, 57, 58, 59, 60], color: 'bg-primary', name: 'Installation' }
   ];
 
   // Function to get the phase for a specific day
@@ -123,26 +123,26 @@ const Calendar = () => {
         {/* Detailed Timeline Section */}
         <div className="mt-16 space-y-8 max-w-6xl mx-auto">
           {/* Day 1 */}
-          <Card id="day1" className="shadow-lg border-l-4 border-green-500">
-            <CardHeader className="bg-green-50">
-              <CardTitle className="text-2xl text-green-700">Day 1 – Your Roof Inspection & First Call</CardTitle>
+          <Card id="day1" className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 1 – Your Roof Inspection & First Call</CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
               <ul className="space-y-4 text-xl">
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>You schedule your free roof inspection.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>Your roof is checked that same day (or within 24 hours).</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>You see photos of any issues so you know exactly what's going on.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>You learn if your roof looks like it may qualify for replacement.</span>
                 </li>
               </ul>
@@ -150,26 +150,26 @@ const Calendar = () => {
           </Card>
 
           {/* Day 7-14 */}
-          <Card id="day7-14" className="shadow-lg border-l-4 border-blue-500">
-            <CardHeader className="bg-blue-50">
-              <CardTitle className="text-2xl text-blue-700">Day 7–14 – Your Adjuster Visit</CardTitle>
+          <Card id="day7-14" className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 7–14 – Your Adjuster Visit</CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
               <ul className="space-y-4 text-xl">
                 <li className="flex items-start">
-                  <span className="text-blue-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>The adjuster calls you and sets a time to come out.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>We meet them at your home so you don't have to go through it alone.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>We point out the damage and make sure nothing is missed.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>After the inspection, the adjuster files paperwork with your carrier.</span>
                 </li>
               </ul>
@@ -177,22 +177,22 @@ const Calendar = () => {
           </Card>
 
           {/* Day 15-25 */}
-          <Card id="day15-25" className="shadow-lg border-l-4 border-purple-500">
-            <CardHeader className="bg-purple-50">
-              <CardTitle className="text-2xl text-purple-700">Day 15–25 – Approval Process</CardTitle>
+          <Card id="day15-25" className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 15–25 – Approval Process</CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
               <ul className="space-y-4 text-xl">
                 <li className="flex items-start">
-                  <span className="text-purple-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>Your carrier reviews the adjuster's report.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-purple-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>If your claim is approved, we move forward with you under a contingency agreement.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-purple-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>This means we only do the work if your claim is approved — no risk to you.</span>
                 </li>
               </ul>
@@ -200,22 +200,22 @@ const Calendar = () => {
           </Card>
 
           {/* Day 26-35 */}
-          <Card id="day26-35" className="shadow-lg border-l-4 border-orange-500">
-            <CardHeader className="bg-orange-50">
-              <CardTitle className="text-2xl text-orange-700">Day 26–35 – Your Project Gets Ready</CardTitle>
+          <Card id="day26-35" className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 26–35 – Your Project Gets Ready</CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
               <ul className="space-y-4 text-xl">
                 <li className="flex items-start">
-                  <span className="text-orange-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>Once approved, your paperwork is finalized.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>You pick shingle colors and style that fit your home.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>Materials are measured, ordered, and reserved for your project.</span>
                 </li>
               </ul>
@@ -223,22 +223,22 @@ const Calendar = () => {
           </Card>
 
           {/* Day 36-50 */}
-          <Card id="day36-50" className="shadow-lg border-l-4 border-yellow-500">
-            <CardHeader className="bg-yellow-50">
-              <CardTitle className="text-2xl text-yellow-700">Day 36–50 – Your Build Is Scheduled</CardTitle>
+          <Card id="day36-50" className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 36–50 – Your Build Is Scheduled</CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
               <ul className="space-y-4 text-xl">
                 <li className="flex items-start">
-                  <span className="text-yellow-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>Your roof is added to the install calendar.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-yellow-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>You get updates on delivery and install dates.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-yellow-600 font-bold mr-3 text-2xl">•</span>
+                  <span className="text-primary font-bold mr-3 text-2xl">•</span>
                   <span>You know exactly when the crew is coming so you can plan ahead.</span>
                 </li>
               </ul>
