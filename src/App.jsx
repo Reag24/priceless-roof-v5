@@ -42,6 +42,7 @@ import house5 from './assets/house5.svg';
 import house6 from './assets/house6.svg';
 import HighConvertingLanding from "./components/HighConvertingLanding.jsx";
 import StormDamageLanding from "./components/StormDamageLanding.jsx";
+import Calendar from "./components/Calendar.jsx";
 
 const allReviews = [
   {
@@ -180,9 +181,9 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* SEO Schema and Tracking */}
-      <OrganizationSchema />
+      {/* <OrganizationSchema />
       <LocalBusinessSchema />
-      <WebsiteSchema />
+      <WebsiteSchema /> */}
       <TrackingSimple />
       
       {/* Header */}
@@ -714,6 +715,7 @@ function App() {
         <Route path="/blog/granules-in-gutters" element={<GranulesInGuttersPost />} />
         <Route path="/coastal-homeowners" element={<HighConvertingLanding />} />
         <Route path="/stormdamage-nc" element={<StormDamageLanding />} />
+        <Route path="/calendar" element={<Calendar />} />
       </Routes>
     </Router>
   );
