@@ -45,11 +45,11 @@ const Calendar = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Title Section */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-primary mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-primary mb-4">
             How long till your new roof:
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Track your roofing project timeline with our 60-day calendar. Each day represents a step closer to your beautiful new roof!
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            Your step by step path to getting your payout for a new roof!
           </p>
         </div>
 
@@ -58,18 +58,18 @@ const Calendar = () => {
           <CardHeader className="text-center bg-primary text-white">
             <CardTitle className="text-3xl">60-Day Roofing Timeline</CardTitle>
           </CardHeader>
-          <CardContent className="p-8">
-            <div className="grid grid-cols-10 gap-3 md:gap-4">
+          <CardContent className="p-4 md:p-8">
+            <div className="grid grid-cols-5 md:grid-cols-10 gap-2 md:gap-4">
               {days.map((day) => (
                 <div
                   key={day}
                   className="aspect-square flex items-center justify-center bg-gray-50 hover:bg-primary hover:text-white transition-colors duration-200 rounded-lg border-2 border-gray-200 hover:border-primary cursor-pointer group"
                 >
                   <div className="text-center">
-                    <div className="text-lg font-bold group-hover:text-white">
+                    <div className="text-xs md:text-lg font-bold group-hover:text-white">
                       Day
                     </div>
-                    <div className="text-2xl font-bold group-hover:text-white">
+                    <div className="text-sm md:text-2xl font-bold group-hover:text-white">
                       {day}
                     </div>
                   </div>
@@ -79,63 +79,153 @@ const Calendar = () => {
           </CardContent>
         </Card>
 
-        {/* Information Section */}
-        <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <Card className="p-6 shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl text-primary">What to Expect</CardTitle>
+        {/* Detailed Timeline Section */}
+        <div className="mt-16 space-y-8 max-w-6xl mx-auto">
+          {/* Day 0 */}
+          <Card className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 0 – Your Call & Inspection</CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="space-y-3 text-lg">
+            <CardContent className="pt-6">
+              <ul className="space-y-2 text-lg">
                 <li className="flex items-start">
                   <span className="text-primary font-bold mr-2">•</span>
-                  <span><strong>Days 1-7:</strong> Initial inspection and insurance claim filing</span>
+                  <span>You schedule your free roof inspection.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary font-bold mr-2">•</span>
-                  <span><strong>Days 8-21:</strong> Insurance review and approval process</span>
+                  <span>Your roof is checked that same day (or within 24 hours).</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary font-bold mr-2">•</span>
-                  <span><strong>Days 22-35:</strong> Material ordering and scheduling</span>
+                  <span>You see photos of any issues so you know exactly what's going on.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary font-bold mr-2">•</span>
-                  <span><strong>Days 36-45:</strong> Pre-installation preparations</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary font-bold mr-2">•</span>
-                  <span><strong>Days 46-60:</strong> Installation and final inspection</span>
+                  <span>You learn if your roof looks like it may qualify for replacement.</span>
                 </li>
               </ul>
             </CardContent>
           </Card>
 
-          <Card className="p-6 shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl text-primary">Why Choose Priceless?</CardTitle>
+          {/* Day 7-14 */}
+          <Card className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 7–14 – Your Adjuster Visit</CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="space-y-3 text-lg">
+            <CardContent className="pt-6">
+              <ul className="space-y-2 text-lg">
                 <li className="flex items-start">
-                  <span className="text-primary font-bold mr-2">✓</span>
-                  <span>Transparent timeline and process</span>
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>The adjuster calls you and sets a time to come out.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary font-bold mr-2">✓</span>
-                  <span>Licensed and insured professionals</span>
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>We meet them at your home so you don't have to go through it alone.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary font-bold mr-2">✓</span>
-                  <span>IKO certified installation</span>
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>We point out the damage and make sure nothing is missed.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary font-bold mr-2">✓</span>
-                  <span>Contingent payment guarantee</span>
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>After the inspection, the adjuster files paperwork with your carrier.</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Day 15-25 */}
+          <Card className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 15–25 – Approval Process</CardTitle>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <ul className="space-y-2 text-lg">
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>Your carrier reviews the adjuster's report.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary font-bold mr-2">✓</span>
-                  <span>5-star customer satisfaction</span>
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>If your claim is approved, we move forward with you under a contingency agreement.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>This means we only do the work if your claim is approved — no risk to you.</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Day 26-35 */}
+          <Card className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 26–35 – Your Project Gets Ready</CardTitle>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <ul className="space-y-2 text-lg">
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>Once approved, your paperwork is finalized.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>You pick shingle colors and style that fit your home.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>Materials are measured, ordered, and reserved for your project.</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Day 36-50 */}
+          <Card className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 36–50 – Your Build Is Scheduled</CardTitle>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <ul className="space-y-2 text-lg">
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>Your roof is added to the install calendar.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>You get updates on delivery and install dates.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>You know exactly when the crew is coming so you can plan ahead.</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Day 51-60 */}
+          <Card className="shadow-lg border-l-4 border-primary">
+            <CardHeader className="bg-primary/5">
+              <CardTitle className="text-2xl text-primary">Day 51–60 – Your 1-Day Roof Install</CardTitle>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <ul className="space-y-2 text-lg">
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>Your new roof is installed in just one day.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>Your yard is cleaned, nails picked up, and debris hauled away.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>You walk the property with us and approve the work.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">•</span>
+                  <span>You finish with a brand-new roof, ready before storm season.</span>
                 </li>
               </ul>
             </CardContent>
